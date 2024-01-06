@@ -35,10 +35,14 @@ if where_to_go == "left":
         #Third task: Choose a door
         color = input("You arrive at the island unharmed. There is a house with three doors. one red, one yellow, and one blue. Which color do you choose? \n").lower()
         if color == "yellow":
-            print("You Win!")
+            print("You found the treasure. You Win!")
+        elif color == "red":
+            print("You entered a room full of fire. Game Over!")
+        elif color == "blue":
+            print("You entered a room full of beast. Game Over!")
         else:
-            print("Game Over")  
+            print("You choose a door that dosen't exist. Game Over!")  
     else:
-        print("Game Over")
+        print("You got attacked by angry trout. Game Over!")
 else:
-    print("Game Over")
+    print("You fell into a hole. Game Over")
